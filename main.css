@@ -1,0 +1,101 @@
+body{
+    font-family: Roboto, sans-serif;
+}
+.navbar{
+    background-color: #c7a1cf;
+}
+#cabecalho .nav .nav-link.active{
+    background-color: #fff;
+    color: #7d2099;
+}
+header h1{
+    color:#7d2099;
+}
+.carousel-inner img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do carrossel */
+    height: 700px; /* Defina uma altura fixa que você preferir */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+}
+#cabecalho .nav .nav-link, 
+.navbar-brand, 
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover{
+    color: #fff;
+}
+#sobre-o-restaurante,
+#nossas-gostosuras {
+    background-color: #f6edf9;
+}
+.section-title{
+    font-family: 'Playball', cursive;
+}
+.section-title span{
+    color:#7d2099;
+}
+.text-colored{
+    color: #7d2099;
+}
+.nav-cardapio .nav-link.active{
+    background-color: #c7a1cf;
+    color: #fff;
+}
+.nav-cardapio .nav-link:hover{
+    color: #c7a1cf;
+}
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+.social-links a{
+    text-decoration: none;
+}
+#formulario{
+    margin-top: 50px;
+}
+.btn-custom {
+    background-color: #c7a1cf;
+    color: #fff; /* Para garantir que o texto seja branco */
+}
+
+.btn-custom:hover {
+    background-color: #7d2099;
+    color: #fff; /* Um tom um pouco mais escuro ao passar o mouse */
+}
+footer{
+    background-color: #c7a1cf;
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .carousel-item img{
+        height: 280px;
+    }
+}
+@media (min-width: 641px) and (max-width: 1023px) {
+    #sobre-o-restaurante .col-md-5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #sobre-o-restaurante .col-md-5 img {
+        margin-bottom: 1rem;
+    }
+
+    #sobre-o-restaurante .col-md-7 {
+        text-align: center;
+    }
+}
+
+/* Novas regras para mobile */
+@media (max-width: 640px) {
+    #nossas-gostosuras .tab-content .row > div {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    #nossas-gostosuras .tab-content .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
