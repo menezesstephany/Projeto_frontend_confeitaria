@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho"> <!--Faz com que o header acompanhe a rolagem da pagina-->
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho"> 
         <div class="container" id="menu-container">
             <h1 class="section-title m-0 display-3">Sweet Dream</h1>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
@@ -22,7 +22,7 @@
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
                         <a href="#sobre-o-restaurante" class="nav-link">
-                            <i class="bi bi-house-door me-1"></i> <!--icone da casinha, 1 rep espaçamento-->
+                            <i class="bi bi-house-door me-1"></i> 
                             Sobre a Sweet Dream
                         </a>
                     </li>
@@ -281,7 +281,7 @@
                     <div class="col-md-5">
                         <div class="row">
                             <h3 class="section-title fs-4 text-colored">
-                                <i class="bi bi-hands-thumbs-up-fill"></i> <!--adicionando icones do bootstrap-->
+                                <i class="bi bi-hands-thumbs-up-fill"></i> 
                                 Redes sociais
                             </h3>
                             <ul class="social-links">
@@ -326,10 +326,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script>
         $(document).ready(function() {
-            // Aplicar máscara ao campo de telefone
             $('#telefone').mask('(00) 00000-0000');
     
-            // Validação do formulário
             $('form').validate({
                 rules: {
                     nome: {
@@ -352,9 +350,8 @@
                     mensagem: "Por favor, insira sua mensagem"
                 },
                 submitHandler: function(form) {
-                    // Aqui o alerta só aparecerá se todos os campos obrigatórios estiverem preenchidos
                     alert("Recebemos sua mensagem, em breve entraremos em contato.");
-                    form.reset(); // Opcional: limpa o formulário após o envio
+                    form.reset();
                 }
             });
         });

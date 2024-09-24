@@ -12,9 +12,9 @@ header h1{
     color:#7d2099;
 }
 .carousel-inner img {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura do carrossel */
-    height: 700px; /* Defina uma altura fixa que você preferir */
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    width: 100%; 
+    height: 700px; 
+    object-fit: cover; 
 }
 #cabecalho .nav .nav-link, 
 .navbar-brand, 
@@ -54,12 +54,12 @@ header h1{
 }
 .btn-custom {
     background-color: #c7a1cf;
-    color: #fff; /* Para garantir que o texto seja branco */
+    color: #fff; 
 }
 
 .btn-custom:hover {
     background-color: #7d2099;
-    color: #fff; /* Um tom um pouco mais escuro ao passar o mouse */
+    color: #fff; 
 }
 footer{
     background-color: #c7a1cf;
@@ -87,7 +87,6 @@ footer{
     }
 }
 
-/* Novas regras para mobile */
 @media (max-width: 640px) {
     #nossas-gostosuras .tab-content .row > div {
         flex: 0 0 50%;
